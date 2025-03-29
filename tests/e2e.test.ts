@@ -17,7 +17,7 @@ import { CreateAccountForm } from '../pages/CreateAccount';
       await homePage.navigateToGearPage();
       const gearPage = await homePage.verifyGearPage();
       expect(gearPage).toContainText('Gear');
-
+      
       //Select Mens option and verify men page is loaded and navigated to new page
       await homePage.navigateToMenPage();
       const menPage = await homePage.verifyMenPage();

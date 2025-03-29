@@ -15,9 +15,9 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: true,
+    //headless: true,
     viewport: { width: 1280, height: 720 },
-    baseURL: 'https://magento-2.showcase-wallee.com',
+    baseURL: '',
     screenshot: 'only-on-failure',
     trace: 'on-first-retry',
   },
