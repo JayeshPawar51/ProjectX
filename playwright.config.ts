@@ -17,7 +17,8 @@ export default defineConfig({
   use: {
     headless: false,
     viewport: { width: 1280, height: 720 },
-    baseURL: 'https://magento.softwaretestingboard.com/',
+    //baseURL: 'https://magento.softwaretestingboard.com/',
+    baseURL:'https://demoqa.com/',
     screenshot: 'only-on-failure',
     trace: 'on', //'on-first-retry'
   },

@@ -3,6 +3,7 @@ import { ProductPage } from '../pages/ProductPage';
 import { CheckoutPage } from '../pages/CheckoutPage';
 import { HomePage } from '../pages/HomePage'
 import { CreateAccountForm } from '../pages/CreateAccount';
+import { chromium } from '@playwright/test';
 
 import { InterviewQPage } from '../pages/InterviewQPage';
 
@@ -11,6 +12,10 @@ import { InterviewQPage } from '../pages/InterviewQPage';
    test.describe('Demo 1',()=>{
     /*test.beforeAll('before All',()=>{
       console.log("Inside Before All")
+      const browser = chromium.launch();
+      const context = browser.newContext();
+      const page = context.newPage();
+
     });
     test.beforeEach(async({page})=>{
       console.log("Inside Before Each")
@@ -23,7 +28,7 @@ import { InterviewQPage } from '../pages/InterviewQPage';
     test.afterEach(async({page})=>{
       console.log("Inside After Each")
     });*/
-    
+
     test('User should navigation between pages and sorting B1 @smoke', async ({ page }) => {
       const homePage = new HomePage(page);
       await homePage.goto('/');
