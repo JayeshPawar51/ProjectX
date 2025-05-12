@@ -1,22 +1,15 @@
 import { test, expect } from '@playwright/test';
-import { ProductPage } from '../pages/ProductPage';
-import { CheckoutPage } from '../pages/CheckoutPage';
-import { HomePage } from '../pages/HomePage'
-import { CreateAccountForm } from '../pages/CreateAccount';
+import { ProductPage } from '../pages/eComm/ProductPage';
+import { CheckoutPage } from '../pages/eComm/CheckoutPage';
+import { HomePage } from '../pages/eComm/HomePage'
+import { CreateAccountForm } from '../pages/eComm/CreateAccount';
 import { chromium } from '@playwright/test';
 
-import { InterviewQPage } from '../pages/InterviewQPage';
 
 
 
    test.describe('Demo 1',()=>{
-    /*test.beforeAll('before All',()=>{
-      console.log("Inside Before All")
-      const browser = chromium.launch();
-      const context = browser.newContext();
-      const page = context.newPage();
-
-    });
+   
     test.beforeEach(async({page})=>{
       console.log("Inside Before Each")
       const homePage = new HomePage(page);
@@ -27,7 +20,7 @@ import { InterviewQPage } from '../pages/InterviewQPage';
     });
     test.afterEach(async({page})=>{
       console.log("Inside After Each")
-    });*/
+    });
 
     test('User should navigation between pages and sorting B1 @smoke', async ({ page }) => {
       const homePage = new HomePage(page);

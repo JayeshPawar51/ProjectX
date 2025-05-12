@@ -1,6 +1,6 @@
 import test from "@playwright/test";
-import { InterviewQPage } from "../pages/InterviewQPage";
-import { InterviewArrayPage } from "../pages/InterviewArrayPage";
+import { InterviewQPage } from "../pages/InterviewQuestions/InterviewQPage";
+import { InterviewArrayPage } from "../pages/InterviewQuestions/InterviewArrayPage";
 
 test('String Reverse', async ({ page }) => {
     const inputString = "My Name Is Jayesh";
